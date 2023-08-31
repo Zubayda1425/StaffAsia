@@ -1,0 +1,593 @@
+/* -------------------------------
+
+------------------------------- */
+
+
+
+/* -------------------------------
+               font
+------------------------------- */
+* {
+    font-family: 'Epilogue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* -------------------------------
+        BODY MEASUREMENT
+------------------------------- */
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+/* -------------------------------
+        CONTAINER
+------------------------------- */
+
+.container {
+    max-width: 1344px;
+    margin: auto;
+}
+
+
+/* -------------------------------
+            NAVIGTION
+------------------------------- */
+
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+    box-shadow: 0 2px 20px rgb(210, 210, 210);
+}
+
+.nav_container {
+    margin: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav_container img {
+    height: 50px;
+}
+
+.center_nav {
+    width: 300px;
+}
+
+.center_nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    /* border: 1px solid black; */
+}
+
+.center_nav li {
+    list-style: none;
+}
+
+.center_nav a {
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+    margin: 0 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/* -------------------------------
+ NAVIGATION >> Hire__us (Animation) 
+------------------------------- */
+
+
+@keyframes slide_hireUs {
+    100% {
+        transform: translateX(-70%);
+    }
+}
+
+.bg_hireUs {
+    width: 140px;
+    height: 37px;
+    position: relative;
+    /* right: 0px; */
+    background-color: rgb(224, 244, 224);
+    border-top: 2.5px solid black;
+    border-bottom: 2px solid black;
+    overflow: hidden;
+    /* display: none; */
+}
+
+.hire-us {
+    width: 190px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    animation: slide_hireUs 4s linear infinite normal;
+    animation-play-state: running;
+    white-space: nowrap;
+}
+
+.hire-us {
+    /* font-size: 20px; */
+    color: rgb(70 183 81);
+}
+
+.hire-us .fa-solid {
+    padding: 0 20px;
+    font-size: 10px;
+}
+
+.hire-us p:nth-child(1) {
+    padding: 0 20px 0 0;
+}
+
+
+
+/* -------------------------------
+            MAIN >> HOME
+------------------------------- */
+
+
+.we_make_container {
+    /* margin: 20px; */
+    background-image: url("Images/background/Bck-1.png");
+    background-position: center;
+    background-size: cover;
+    margin-top: 30px;
+    padding: 100px 0 60px 0;
+}
+
+.we_make {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+.together {
+    color: rgb(253 97 59);
+    font-size: 22.5px;
+}
+
+#running_business {
+    font-size: 6rem;
+    line-height: 120px;
+
+}
+
+
+/* -------------------------------
+    MAIN >> HOME >> TEXTING_EFFECT
+------------------------------- */
+
+/* @keyframes typing {
+    0% {
+
+        border-left: 10px solid rgb(244, 244, 244);
+    }
+
+    25% {
+        border-left: 10px solid rgb(70 183 81);
+    }
+
+    50% {
+        
+        border-left: 10px solid rgb(244, 244, 244);
+    }
+
+    75% {
+        border-left: 10px solid rgb(70 183 81);
+    }
+
+    90% {
+        border-left: 10px solid rgb(244, 244, 244);
+    }
+
+    100% {
+        
+        left: 50%;
+        border-left: 10px solid rgb(70 183 81);
+
+    }
+}
+
+@keyframes slide_typing {
+    100% {
+        top: -360px;
+
+    }
+}
+
+@keyframes slide_text {
+    100% {
+        left: 50%;
+    }
+
+    0% {
+        left: 0%
+    }
+} */
+
+@keyframes efficient {
+
+
+    0% {
+        left: 0%;
+    }
+
+    20% {
+        left: 0%;
+    }
+
+    40% {
+        left: 0%;
+    }
+
+    50% {
+        left: 0%;
+    }
+
+    60% {
+        left: 0%;
+    }
+
+    80% {
+        left: 0%;
+    }
+
+    100% {
+        left: 25%;
+    }
+
+}
+
+@keyframes efficient_after {
+
+    0% {
+        left: 70%;
+        border-left: 10px solid rgb(244, 244, 244);
+    }
+
+    20% {
+        left: 70%;
+        border-left: 10px solid rgb(70 183 81);
+    }
+
+    40% {
+        left: 70%;
+        border-left: 10px solid rgb(244, 244, 244);
+    }
+
+    50% {
+        left: 70%;
+        border-left: 10px solid rgb(70 183 81);
+    }
+
+    60% {
+        left: 70%;
+        border-left: 10px solid rgb(244, 244, 244);
+    }
+
+    80% {
+        left: 70%;
+        border-left: 10px solid rgb(70 183 81);
+    }
+
+    100% {
+
+        left: 24.5%;
+        border-left: 10px solid rgb(244, 244, 244);
+
+    }
+}
+
+@keyframes easier {
+
+
+
+    0% {
+        left: 0%;
+    }
+
+    20% {
+        left: 0%;
+    }
+
+    40% {
+        left: 0%;
+    }
+
+    50% {
+        left: 0%;
+    }
+
+    60% {
+        left: 0%;
+    }
+
+    80% {
+        left: 0%;
+    }
+
+    100% {
+        left: 23%;
+    }
+
+}
+
+@keyframes easier_after {
+    0% {
+        left: 64%;
+        border-left: 10px solid rgb(244, 244, 244);
+    }
+
+    20% {
+        left: 64%;
+        border-left: 10px solid rgb(70 183 81);
+    }
+
+    40% {
+        left: 64%;
+        border-left: 10px solid rgb(244, 244, 244);
+    }
+
+    50% {
+        left: 64%;
+        border-left: 10px solid rgb(70 183 81);
+    }
+
+    60% {
+        left: 64%;
+        border-left: 10px solid rgb(244, 244, 244);
+    }
+
+    80% {
+        left: 64%;
+        border-left: 10px solid rgb(70 183 81);
+    }
+
+
+    100% {
+
+        left: 27%;
+        border-left: 10px solid rgb(244, 244, 244);
+
+    }
+}
+
+
+@keyframes simpler {
+
+
+    0% {
+        left: 0%;
+    }
+
+    20% {
+        left: 0%;
+    }
+
+    40% {
+        left: 0%;
+    }
+
+    50% {
+        left: 0%;
+    }
+
+    60% {
+        left: 0%;
+    }
+
+    80% {
+        left: 0%;
+    }
+
+    100% {
+        left: 20%;
+    }
+}
+
+@keyframes simpler_after {
+    0% {
+        left: 68%;
+        border-left: 10px solid rgb(244, 244, 244);
+    }
+
+    20% {
+        left: 68%;
+        border-left: 10px solid rgb(70 183 81);
+    }
+
+    40% {
+        left: 68%;
+        border-left: 10px solid rgb(244, 244, 244);
+    }
+
+    50% {
+        left: 68%;
+        border-left: 10px solid rgb(70 183 81);
+    }
+
+    60% {
+        left: 68%;
+        border-left: 10px solid rgb(244, 244, 244);
+    }
+
+    80% {
+        left: 68%;
+        border-left: 10px solid rgb(70 183 81);
+    }
+
+    100% {
+
+        left: 29.5%;
+        border-left: 10px solid rgb(244, 244, 244);
+
+    }
+}
+
+
+
+@keyframes slide_typing {
+    100% {
+        top: -254px;
+    }
+}
+
+
+.typing_animation {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid red;
+    height: 84px;
+    /* overflow: hidden; */
+}
+
+.typing_animation_container {
+
+    position: relative;
+    top: 0px;
+
+    animation: slide_typing 9s steps(3) infinite;
+}
+
+/* .typing li {
+    position: relative;
+    top: 0px;
+    animation: slide_typing_li 9s steps(3) infinite;
+} */
+
+.typing {
+
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    font-weight: 900;
+    color: rgb(70 183 81);
+    position: relative;
+    padding-top: 3px;
+
+}
+
+
+
+.EFFICIENT {
+    position: relative;
+    animation: efficient 3s steps(11) infinite alternate;
+}
+
+
+.EFFICIENT:after {
+    content: "";
+    height: 84px;
+    width: 407px;
+    left: 68%;
+    position: absolute;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    border-left: 10px solid rgb(70 183 81);
+    animation: efficient_after 3s steps(11) infinite alternate;
+}
+
+.EASIER {
+    position: relative;
+    animation: easier 3s steps(11) infinite alternate;
+}
+
+.EASIER:after {
+    content: "";
+    height: 84px;
+    width: 299px;
+    left: 63%;
+    position: absolute;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    border-left: 10px solid rgb(70 183 81);
+    animation: easier_after 3s steps(11) infinite alternate;
+}
+
+.SIMPLER {
+    position: relative;
+    animation: simpler 3s steps(11) infinite alternate;
+}
+
+.SIMPLER:after {
+    content: "";
+    height: 84px;
+    width: 354px;
+    left: 66%;
+    position: absolute;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    border-left: 10px solid rgb(70 183 81);
+    animation: simpler_after 3s steps(11) infinite alternate;
+}
+
+
+
+
+
+/* .box {
+    width: 100%;
+    position: absolute;
+    right: 300px;
+}
+
+.hiding_box {
+    height: 90px;
+    background-color: rgba(183, 70, 70, 0.634);
+}
+
+.box-1 {
+    width: 407px;
+}
+
+.box-2 {
+    width: 281px;
+}
+
+.box-3 {
+    width: 354px;
+} */
+
+
+/* -------------------------------
+
+------------------------------- */
+
+
+
+@keyframes rotate {
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.lets_talk {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.lets_talk img {
+    width: 150px;
+    animation: rotate 17s linear infinite;
+}
+
+.fa-arrow-right {
+    position: absolute;
+    top: 30px;
+}

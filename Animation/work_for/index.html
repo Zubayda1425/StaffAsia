@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7150fbc846.js" crossorigin="anonymous"></script>
+    <style>
+        @keyframes slide {
+
+
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-1000px);
+            }
+
+
+            /* 10% {
+                transform: translateX(0%);
+            }
+
+            30% {
+                transform: translateX(160%);
+            } */
+
+            /* 10% {
+                transform: translateX(-80%);
+            }
+
+            10% {
+                transform: translateX(-80%);
+            }
+
+            10% {
+                transform: translateX(-80%);
+            } */
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            /* position: relative; */
+            /* overflow: hidden; */
+        }
+
+        .req {
+            height: 500px;
+            width: 1200px;
+            border: 2px solid red;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .solid {
+            height: 60px;
+            width: 200%;
+            position: absolute;
+            top: 200px;
+            background-color: green;
+            rotate: 2.5deg;
+        }
+
+        .text {
+            height: 70px;
+            width: 200%;
+            background-color: black;
+            position: absolute;
+            top: 200px;
+            rotate: -2.5deg;
+        }
+
+        .text-content {
+            color: white;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 195px;
+            rotate: -2.5deg;
+            animation: slide 5s linear infinite;
+            animation-play-state: running;
+            right: 0;
+        }
+
+        i {
+            padding: 0 50px;
+            color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="req">
+
+
+            <div class="solid"></div>
+            <div class="text"></div>
+            <div class="text-content">
+                <h2>Branding</h2>
+                <i class="fa-solid fa-clover"></i>
+                <h2>Digital Marketing</h2>
+                <i class="fa-solid fa-clover"></i>
+                <h2>Development</h2>
+                <i class="fa-solid fa-clover"></i>
+                <h2>UI/UX Design</h2>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

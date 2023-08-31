@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes ul {
+            100% {
+                left: 60px;
+            }
+        }
+
+        @keyframes box {
+            100% {
+                left: 50px;
+            }
+
+            0% {
+                left: 105px;
+            }
+        }
+
+
+
+        .container {
+            margin: 20px;
+            height: 120px;
+            width: 1000px;
+            background-color: lightcoral;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgb(27, 28, 28);
+
+        }
+
+        .typing_slide {
+            height: 100px;
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(176, 176, 250);
+            position: relative;
+            border: 1px solid rgb(27, 28, 28);
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left: 0;
+            border: 2px solid black;
+            animation: ul 1s steps(11) infinite alternate;
+        }
+
+        li {
+            list-style: none;
+            /* padding: 0 20px; */
+            color: white;
+            font-size: 20px;
+        }
+
+        li>p {
+            /* position: absolute; */
+            width: 100px;
+            text-align: right;
+            /* animation: ul 1s steps(11) infinite alternate; */
+        }
+
+        .box {
+            height: 25px;
+            width: 500px;
+            border-left: 5px solid rgb(27, 28, 28);
+            background-color: lightcoral;
+            position: absolute;
+            left: 105px;
+            animation: box 1s steps(11) infinite alternate;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="typing_slide">
+            <div class="typing">
+                <ul>
+                    <li>
+                        <p>EFFICIENT </p>
+
+                    </li>
+                    <li>
+                        <p>EASIER </p>
+
+                    </li>
+                    <li>
+                        <p>SIMPLER</p>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="box">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
