@@ -222,11 +222,12 @@ header {
 
 
     0% {
-        left: 0%;
+        left: 25%;
     }
 
     20% {
         left: 0%;
+
     }
 
     40% {
@@ -254,32 +255,37 @@ header {
 @keyframes efficient_after {
 
     0% {
-        left: 70%;
+        left: 24.5%;
         border-left: 10px solid rgb(244, 244, 244);
     }
 
     20% {
         left: 70%;
+        width: 300px;
         border-left: 10px solid rgb(70 183 81);
     }
 
     40% {
         left: 70%;
+        width: 300px;
         border-left: 10px solid rgb(244, 244, 244);
     }
 
     50% {
         left: 70%;
+        width: 300px;
         border-left: 10px solid rgb(70 183 81);
     }
 
     60% {
         left: 70%;
+        width: 300px;
         border-left: 10px solid rgb(244, 244, 244);
     }
 
     80% {
         left: 70%;
+        width: 300px;
         border-left: 10px solid rgb(70 183 81);
     }
 
@@ -296,11 +302,12 @@ header {
 
 
     0% {
-        left: 0%;
+        left: 23%;
     }
 
     20% {
         left: 0%;
+
     }
 
     40% {
@@ -327,32 +334,37 @@ header {
 
 @keyframes easier_after {
     0% {
-        left: 64%;
+        left: 27%;
         border-left: 10px solid rgb(244, 244, 244);
     }
 
     20% {
         left: 64%;
+        width: 300px;
         border-left: 10px solid rgb(70 183 81);
     }
 
     40% {
         left: 64%;
+        width: 300px;
         border-left: 10px solid rgb(244, 244, 244);
     }
 
     50% {
         left: 64%;
+        width: 300px;
         border-left: 10px solid rgb(70 183 81);
     }
 
     60% {
         left: 64%;
+        width: 300px;
         border-left: 10px solid rgb(244, 244, 244);
     }
 
     80% {
         left: 64%;
+        width: 300px;
         border-left: 10px solid rgb(70 183 81);
     }
 
@@ -370,7 +382,7 @@ header {
 
 
     0% {
-        left: 0%;
+        left: 20%;
     }
 
     20% {
@@ -400,32 +412,37 @@ header {
 
 @keyframes simpler_after {
     0% {
-        left: 68%;
+        left: 29.5%;
         border-left: 10px solid rgb(244, 244, 244);
     }
 
     20% {
         left: 68%;
+        width: 300px;
         border-left: 10px solid rgb(70 183 81);
     }
 
     40% {
         left: 68%;
+        width: 300px;
         border-left: 10px solid rgb(244, 244, 244);
     }
 
     50% {
         left: 68%;
+        width: 300px;
         border-left: 10px solid rgb(70 183 81);
     }
 
     60% {
         left: 68%;
+        width: 300px;
         border-left: 10px solid rgb(244, 244, 244);
     }
 
     80% {
         left: 68%;
+        width: 300px;
         border-left: 10px solid rgb(70 183 81);
     }
 
@@ -450,10 +467,11 @@ header {
     margin-top: 40px;
     display: flex;
     justify-content: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 84px;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
+
 
 .typing_animation_container {
 
@@ -486,7 +504,8 @@ header {
 
 .EFFICIENT {
     position: relative;
-    animation: efficient 3s steps(11) infinite alternate;
+    left: 25%;
+    animation: efficient 3s steps(11) infinite;
 }
 
 
@@ -494,9 +513,9 @@ header {
     content: "";
     height: 84px;
     width: 407px;
-    left: 68%;
+    /* left: 68%; */
     position: absolute;
-    top: 0;
+    left: 24.5%;
     background-color: rgb(255, 255, 255);
     border-left: 10px solid rgb(70 183 81);
     animation: efficient_after 3s steps(11) infinite alternate;
@@ -504,16 +523,18 @@ header {
 
 .EASIER {
     position: relative;
+    left: 23%;
     animation: easier 3s steps(11) infinite alternate;
 }
 
 .EASIER:after {
     content: "";
     height: 84px;
-    width: 299px;
+    width: 350px;
     left: 63%;
     position: absolute;
     top: 0;
+    left: 27%;
     background-color: rgb(255, 255, 255);
     border-left: 10px solid rgb(70 183 81);
     animation: easier_after 3s steps(11) infinite alternate;
@@ -521,15 +542,17 @@ header {
 
 .SIMPLER {
     position: relative;
+    left: 20%;
     animation: simpler 3s steps(11) infinite alternate;
 }
 
 .SIMPLER:after {
     content: "";
     height: 84px;
-    width: 354px;
+    width: 370px;
     left: 66%;
     position: absolute;
+    left: 29%;
     top: 0;
     background-color: rgb(255, 255, 255);
     border-left: 10px solid rgb(70 183 81);
