@@ -13,6 +13,9 @@
     padding: 0;
 }
 
+hr {
+    rotate: 90DEG;
+}
 
 /* -------------------------------
         BODY MEASUREMENT
@@ -71,7 +74,11 @@ header {
 
 .center_nav li {
     list-style: none;
+    height: fit-content;
+
 }
+
+
 
 .center_nav a {
     text-decoration: none;
@@ -79,7 +86,40 @@ header {
     margin: 0 5px;
     font-size: 16px;
     font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30px;
+
+
 }
+
+
+.center_nav p {
+    width: fit-content;
+    height: fit-content;
+}
+
+.line {
+    margin-top: 4px;
+    width: 27px;
+    background-color: rgb(70 183 81);
+    height: 4.5px;
+    display: none;
+
+}
+
+.center_nav a:hover .line {
+    display: block;
+}
+
+.center_nav a:hover {
+    color: rgb(70 183 81);
+}
+
+
+
+
 
 
 /* -------------------------------
@@ -170,53 +210,6 @@ header {
     MAIN >> HOME >> TEXTING_EFFECT
 ------------------------------- */
 
-/* @keyframes typing {
-    0% {
-
-        border-left: 10px solid rgb(244, 244, 244);
-    }
-
-    25% {
-        border-left: 10px solid rgb(70 183 81);
-    }
-
-    50% {
-        
-        border-left: 10px solid rgb(244, 244, 244);
-    }
-
-    75% {
-        border-left: 10px solid rgb(70 183 81);
-    }
-
-    90% {
-        border-left: 10px solid rgb(244, 244, 244);
-    }
-
-    100% {
-        
-        left: 50%;
-        border-left: 10px solid rgb(70 183 81);
-
-    }
-}
-
-@keyframes slide_typing {
-    100% {
-        top: -360px;
-
-    }
-}
-
-@keyframes slide_text {
-    100% {
-        left: 50%;
-    }
-
-    0% {
-        left: 0%
-    }
-} */
 
 @keyframes efficient {
 
@@ -302,7 +295,7 @@ header {
 
 
     0% {
-        left: 23%;
+        left: 19.5%;
     }
 
     20% {
@@ -327,14 +320,14 @@ header {
     }
 
     100% {
-        left: 23%;
+        left: 19.5%;
     }
 
 }
 
 @keyframes easier_after {
     0% {
-        left: 27%;
+        left: 30%;
         border-left: 10px solid rgb(244, 244, 244);
     }
 
@@ -371,7 +364,7 @@ header {
 
     100% {
 
-        left: 27%;
+        left: 30%;
         border-left: 10px solid rgb(244, 244, 244);
 
     }
@@ -382,7 +375,7 @@ header {
 
 
     0% {
-        left: 20%;
+        left: 23%;
     }
 
     20% {
@@ -406,13 +399,13 @@ header {
     }
 
     100% {
-        left: 20%;
+        left: 23%;
     }
 }
 
 @keyframes simpler_after {
     0% {
-        left: 29.5%;
+        left: 26.5%;
         border-left: 10px solid rgb(244, 244, 244);
     }
 
@@ -448,7 +441,7 @@ header {
 
     100% {
 
-        left: 29.5%;
+        left: 26.5%;
         border-left: 10px solid rgb(244, 244, 244);
 
     }
@@ -481,11 +474,6 @@ header {
     animation: slide_typing 9s steps(3) infinite;
 }
 
-/* .typing li {
-    position: relative;
-    top: 0px;
-    animation: slide_typing_li 9s steps(3) infinite;
-} */
 
 .typing {
 
@@ -504,7 +492,7 @@ header {
 
 .EFFICIENT {
     position: relative;
-    left: 25%;
+    left: 21%;
     animation: efficient 3s steps(11) infinite;
 }
 
@@ -515,7 +503,7 @@ header {
     width: 407px;
     /* left: 68%; */
     position: absolute;
-    left: 24.5%;
+    left: 28.5%;
     background-color: rgb(255, 255, 255);
     border-left: 10px solid rgb(70 183 81);
     animation: efficient_after 3s steps(11) infinite alternate;
@@ -523,7 +511,7 @@ header {
 
 .EASIER {
     position: relative;
-    left: 23%;
+    left: 15.5%;
     animation: easier 3s steps(11) infinite alternate;
 }
 
@@ -534,7 +522,7 @@ header {
     left: 63%;
     position: absolute;
     top: 0;
-    left: 27%;
+    left: 34%;
     background-color: rgb(255, 255, 255);
     border-left: 10px solid rgb(70 183 81);
     animation: easier_after 3s steps(11) infinite alternate;
@@ -542,7 +530,7 @@ header {
 
 .SIMPLER {
     position: relative;
-    left: 20%;
+    left: 19%;
     animation: simpler 3s steps(11) infinite alternate;
 }
 
@@ -552,7 +540,7 @@ header {
     width: 370px;
     left: 66%;
     position: absolute;
-    left: 29%;
+    left: 30.5%;
     top: 0;
     background-color: rgb(255, 255, 255);
     border-left: 10px solid rgb(70 183 81);
@@ -560,35 +548,8 @@ header {
 }
 
 
-
-
-
-/* .box {
-    width: 100%;
-    position: absolute;
-    right: 300px;
-}
-
-.hiding_box {
-    height: 90px;
-    background-color: rgba(183, 70, 70, 0.634);
-}
-
-.box-1 {
-    width: 407px;
-}
-
-.box-2 {
-    width: 281px;
-}
-
-.box-3 {
-    width: 354px;
-} */
-
-
 /* -------------------------------
-
+            WHEEL
 ------------------------------- */
 
 
@@ -600,17 +561,22 @@ header {
 }
 
 .lets_talk {
-    margin-top: 80px;
+    margin-top: 70px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: fit-content;
+    position: relative;
 }
 
 .lets_talk img {
-    width: 150px;
+    width: 130px;
     animation: rotate 17s linear infinite;
 }
 
 .fa-arrow-right {
     position: absolute;
-    top: 30px;
+    rotate: -30deg;
+    font-size: 30px;
 }
