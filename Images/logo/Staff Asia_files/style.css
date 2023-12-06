@@ -2,7 +2,6 @@
 
 ------------------------------- */
 
-
 /* -------------------------------
                font
 ------------------------------- */
@@ -10,6 +9,10 @@
     font-family: 'Epilogue', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+hr {
+    rotate: 90DEG;
 }
 
 /* -------------------------------
@@ -38,61 +41,13 @@ body {
 
 
 header {
-
+    width: 100%;
     top: 0px;
-    height: 970px;
-    /* background-color: rgb(255, 255, 255); */
-    /* box-shadow: 0 2px 20px rgb(210, 210, 210); */
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 20px rgb(210, 210, 210);
     position: relative;
-}
-
-.content {
-    /* position: absolute; */
-    top: 0;
-    width: 100%;
-}
-
-.content hr {
-    border: 0.2px solid rgb(240, 239, 239);
-    margin: 0;
-    margin-bottom: 82px;
-
-}
-
-.content_2 {
-    display: flex;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 41px;
-}
-
-
-.diagonal {
-    border: 0.2px solid rgb(240, 239, 239);
-    margin: 0px;
-    margin: 0 41px;
-    /* margin-bottom: 30px; */
-}
-
-.ninety_deg {
-    border: 0.2px solid rgb(240, 239, 239);
-    margin: 0px;
-    margin: 0 41px;
-    /* rotate: 90deg; */
-}
-
-#container {
-    display: flex;
-    justify-content: center;
-
-}
-
-.Mcontainer_nav {
-    position: absolute;
-    top: 0;
-    width: 100%;
-
+    border: 5px solid green;
 }
 
 .nav_container {
@@ -186,8 +141,8 @@ header {
     position: relative;
     /* right: 0px; */
     background-color: rgb(224, 244, 224);
-    /* border-top: 2.5px solid black; */
-    /* border-bottom: 2px solid black; */
+    border-top: 2.5px solid black;
+    border-bottom: 2px solid black;
     overflow: hidden;
     /* display: none; */
 }
@@ -226,23 +181,14 @@ header {
 /* -------------------------------
            Article-1
 ------------------------------- */
-/* main {
-
+main {
+    border: 5px solid red;
     margin-top: 100px;
-} */
-
-.make_container {
-    position: absolute;
-    top: 100px;
-    /* border: 3px solid red; */
-    margin: 0;
-    margin: 0 auto;
-    width: 100%;
 }
 
 .we_make_container {
     /* margin: 20px; */
-    /* background-image: url("Images/background/Bck-3.png"); */
+    background-image: url("Images/background/Bck-3.png");
     background-position: center;
     background-size: cover;
     margin-top: 30px;
@@ -514,15 +460,9 @@ header {
 
 
 @keyframes slide_typing {
-
-    0% {
-        top: -0px;
-    }
-
     100% {
-        top: -210px;
+        top: -254px;
     }
-
 }
 
 .type_writer {}
@@ -531,8 +471,8 @@ header {
     margin-top: 40px;
     display: flex;
     justify-content: center;
-    /* border: 2px solid red; */
-    height: 70px;
+    border: 2px solid red;
+    height: 84px;
     overflow: hidden;
     /* position: inherit; */
 }
@@ -542,6 +482,7 @@ header {
 
     position: relative;
     /* top: 0px; */
+
     animation: slide_typing 9s steps(3) infinite;
 }
 
@@ -570,7 +511,7 @@ header {
 
 .EFFICIENT:after {
     content: "";
-    height: 90px;
+    height: 84px;
     width: 407px;
     /* left: 68%; */
     position: absolute;
@@ -588,7 +529,7 @@ header {
 
 .EASIER:after {
     content: "";
-    height: 70px;
+    height: 84px;
     width: 350px;
     left: 63%;
     position: absolute;
@@ -607,7 +548,7 @@ header {
 
 .SIMPLER:after {
     content: "";
-    height: 70px;
+    height: 84px;
     width: 370px;
     left: 66%;
     position: absolute;
@@ -633,9 +574,9 @@ header {
 
 .lets_talk {
 
-    height: 100px;
+    height: 2000px;
     width: 100%;
-    /* border: 2px solid red; */
+    border: 2px solid red;
     margin-top: 70px;
     margin-bottom: 60px;
     display: flex;
@@ -664,7 +605,7 @@ header {
            Work For
 ------------------------------- */
 
-@keyframes slide {
+/* @keyframes slide {
     0% {
         transform: translateX(100%);
     }
@@ -720,217 +661,9 @@ header {
 .fa-clover {
     padding: 0 50px;
     color: rgb(70 183 81);
-}
+} */
 
 
 /* -------------------------------
            Article-2
 ------------------------------- */
-
-/* -------------------------------
-            Who We Are
-------------------------------- */
-
-.who_we_are {
-    padding: 20px;
-    margin-top: 150px;
-    display: grid;
-    grid-template-columns: 68% 29%;
-    justify-content: space-between;
-    /* border: 1px solid red; */
-}
-
-
-.des_we_are h1 {
-    font-size: 4rem;
-    margin-left: 20px;
-}
-
-.des_we_are {
-    display: flex;
-    align-items: center;
-    padding: 30px 0;
-    /* border: 1px solid red; */
-}
-
-.who_we_are p {
-    color: rgb(79, 79, 79, 1);
-
-    line-height: 1.8;
-}
-
-.who_we_are img {
-    width: 100%;
-}
-
-.who_we_are hr {
-    border: 2px solid rgb(70 183 81);
-    width: 30px;
-    height: 0px;
-}
-
-.count {
-    margin: 50px 30px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.count div {
-    display: flex;
-}
-
-.count h1 {
-    color: rgb(70 183 81);
-    font-size: 3rem;
-    padding: 5px;
-}
-
-.count p {
-    line-height: 1.5;
-    padding: 5px;
-}
-
-.img_vision {
-    position: relative;
-}
-
-.our_vision {
-    padding: 20px;
-    background-color: white;
-    position: absolute;
-    bottom: 0px;
-    right: 0;
-}
-
-
-
-.our_vision>h1 {
-    font-size: 2.5rem;
-    color: rgb(253 97 59);
-}
-
-.our_vision>h4 {
-    font-weight: 400;
-    color: rgb(79, 79, 79, 1);
-}
-
-
-/* -------------------------------
-           brand
-------------------------------- */
-
-
-.brand {
-    margin-top: 100px;
-    width: 100%;
-    height: 350px;
-    background-color: rgb(250 250 250);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    margin-bottom: 150px;
-}
-
-.brand_text {
-    display: flex;
-    align-items: center;
-}
-
-.brand_text hr {
-    border: 2px solid rgb(70 183 81);
-    width: 30px;
-    height: 0px;
-    margin-right: 20px;
-}
-
-.brand_img {
-
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-around;
-    /* border: 2px solid red; */
-    width: 100%;
-}
-
-.brand_img img {
-    height: 75%;
-    width: 9%;
-    /* border: 1px solid red; */
-}
-
-#spe_img {
-    height: 100%;
-    width: 9%;
-}
-
-
-/* -------------------------------
-           Provided Service
-------------------------------- */
-
-.Provided_Services {
-    display: flex;
-    justify-content: space-between;
-
-    margin-bottom: 150px;
-    margin: 0 30px;
-    height: 300px;
-
-    /* border: 1px solid red; */
-}
-
-.Provided_Services_text {
-    /* border: 1px solid red; */
-    width: 65%;
-}
-
-.Provided_Services_text>div {
-    display: flex;
-}
-
-
-.Provided_Services_text h1 {
-    font-size: 3.5rem;
-    margin-bottom: 25px;
-}
-
-.Provided_Services_text p {
-    font-size: 1rem;
-    line-height: 1.8;
-    color: rgb(79, 79, 79, 1);
-}
-
-.Provided_Services_text hr {
-    border: 2px solid rgb(70 183 81);
-    width: 50px;
-    height: 0px;
-    margin-right: 20px;
-    margin-top: 20px;
-}
-
-.service_arrow {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    /* border: 1px solid red; */
-    height: 300px;
-    width: 20%;
-
-}
-
-.service_arrow i {
-    width: 30px;
-    height: 30px;
-    border: 2px solid rgb(71, 71, 71);
-    border-radius: 100%;
-    padding: 9px 9px;
-    rotate: -3deg;
-    color: rgb(84, 84, 84);
-}
-
-#reverse {
-    rotate: -180deg;
-    margin-right: 20px;
-}
